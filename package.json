@@ -1,12 +1,16 @@
 {
   "name": "express-open-graph-middleware",
   "version": "1.0.0",
-  "description": "",
+  "description": "A middleware for detecting open-graph bots and serving them with the appropriate meta tags. Useful for Single-Page-Applications which would otherwise require Facebookbot, Twitterbot, etc. to execute client-side JavaScript, which they do not. Instead, just serve them the meta tags they care about!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "open-graph",
+    "middleware"
+  ],
   "author": "Mario Hoyos <mariohoyos92@gmail.com> (https://mariohoyosdev.com)",
   "license": "MIT"
 }

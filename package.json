@@ -1,0 +1,12 @@
+{
+  "name": "express-open-graph-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mario Hoyos <mariohoyos92@gmail.com> (https://mariohoyosdev.com)",
+  "license": "MIT"
+}

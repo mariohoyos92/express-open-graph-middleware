@@ -1,6 +1,6 @@
 # express-open-graph-middleware
 
-<p>Simple express middleware for detecting requests made by robots that consume open graph tags (Facebook, Twitter, LinkedIn, Pinterest, Slack)</p>
+Simple express middleware for detecting requests made by robots that consume open graph tags (Facebook, Twitter, LinkedIn, Pinterest, Slack)
 
 ## The problem
 
@@ -52,23 +52,15 @@ app.listen(3000);
 
 In the future, I'm looking to make this a full-fledged solution whereby you can respond to the robots with specific open-graph meta tags that are configurable and that come with sensible defaults. Any ideas with regards to the best approach are welcome!
 
-## Issues
-
-_Looking to contribute? Look for the [Good First Issue][good-first-issue]
-label._
 
 ### 🐛 Bugs
 
 Please file an issue for bugs, missing documentation, or unexpected behavior.
 
-[**See Bugs**][bugs]
-
 ### 💡 Feature Requests
 
 Please file an issue to suggest new features. Vote on feature requests by adding
 a 👍. This helps maintainers prioritize what to work on.
-
-[**See Feature Requests**][requests]
 
 ## LICENSE
 

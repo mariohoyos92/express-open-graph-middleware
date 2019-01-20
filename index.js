@@ -1,13 +1,11 @@
-function isAnOpenGraphRobot(req) {
-  const userAgent = req.headers["user-agent"];
+function isAnOpenGraphRobot(userAgent) {
   const botRegEx = new RegExp(
     /(facebookexternalhit)|(Twitterbot)|(Pinterest)|(LinkedInBot)|(Slack)|(Slackbot-LinkExpanding)/gi
   );
   return botRegEx.test(userAgent);
 }
 
-function determineOpenGraphRobotType(req) {
-  const userAgent = req.headers["user-agent"];
+function determineOpenGraphRobotType(userAgent) {
   if (/(facebookexternalhit)/gi.test(userAgent)) {
     return "facebook";
   } else if (/(Twitterbot)/gi.test(userAgent)) {
@@ -19,20 +17,19 @@ function determineOpenGraphRobotType(req) {
   } else if (/(Slack)|(Slackbot-LinkExpanding)/gi.test(userAgent)) {
     return "slack";
   } else {
-    return "Not able to determine type";
+    return "Could not determine robot type";
   }
 }
 
 function detectOpenGraphRobotMiddleWare(req, res, next) {
-  if (isAnOpenGraphRobot(req)) {
+  const userAgent = req.headers["user-agent"];
+  if (isAnOpenGraphRobot(userAgent)) {
     req.isAnOpenGraphRobot = true;
-    req.openGraphRobotType = determineOpenGraphRobotType(req);
+    req.openGraphRobotType = determineOpenGraphRobotType(userAgent);
     next();
-    return;
   } else {
     next();
-    return;
   }
 }
 
-module.exports = { isAnOpenGraphRobot, detectOpenGraphRobotMiddleWare };
+module.exports = { detectOpenGraphRobotMiddleWare };

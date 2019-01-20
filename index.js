@@ -32,4 +32,4 @@ function detectOpenGraphRobotMiddleWare(req, res, next) {
   }
 }
 
-module.exports = { detectOpenGraphRobotMiddleWare };
+module.exports = detectOpenGraphRobotMiddleWare;

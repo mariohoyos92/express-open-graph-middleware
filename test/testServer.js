@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const { detectOpenGraphRobotMiddleWare } = require("../index");
+const detectOpenGraphRobotMiddleWare = require("../index");
 
 app.get("/", detectOpenGraphRobotMiddleWare, (req, res, next) => {
   const { isOpenGraphRobot, openGraphRobotType } = req;

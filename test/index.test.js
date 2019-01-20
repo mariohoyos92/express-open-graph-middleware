@@ -59,7 +59,7 @@ it("Should forward request unmodified if not an open graph robot", async done =>
   const {
     body: { isOpenGraphRobot, openGraphRobotType }
   } = await makeRequestWithSpoofedUserAgent("Clearly not an open graph robot");
-  expect(isOpenGraphRobot).toBeUndefined();
+  expect(isOpenGraphRobot).toBe(false);
   expect(openGraphRobotType).toBeUndefined();
   done();
 });

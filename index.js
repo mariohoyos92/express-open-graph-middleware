@@ -28,6 +28,7 @@ function detectOpenGraphRobotMiddleWare(req, res, next) {
     req.openGraphRobotType = determineOpenGraphRobotType(userAgent);
     next();
   } else {
+    req.isOpenGraphRobot = false;
     next();
   }
 }

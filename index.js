@@ -26,11 +26,10 @@ function detectOpenGraphRobotMiddleWare(req, res, next) {
   if (isAnOpenGraphRobot(userAgent)) {
     req.isOpenGraphRobot = true;
     req.openGraphRobotType = determineOpenGraphRobotType(userAgent);
-    next();
   } else {
     req.isOpenGraphRobot = false;
-    next();
   }
+  next();
 }
 
 module.exports = detectOpenGraphRobotMiddleWare;

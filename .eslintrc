@@ -1,0 +1,12 @@
+{
+  "extends": ["standard", "prettier"],
+  "plugins": ["import", "jest"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  }
+}

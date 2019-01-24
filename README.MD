@@ -52,6 +52,9 @@ app.listen(3000);
 
 In the future, I'm looking to make this a full-fledged solution whereby you can respond to the robots with specific open-graph meta tags that are configurable and that come with sensible defaults. Any ideas with regards to the best approach are welcome!
 
+## Contributing
+
+Please refer to [our contribution guidelines](https://github.com/mariohoyos92/express-open-graph-middleware/blob/master/CONTRIBUTING.md)
 
 ### 🐛 Bugs
 

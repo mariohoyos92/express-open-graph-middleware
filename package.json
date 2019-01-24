@@ -8,7 +8,7 @@
     "test": "jest",
     "prettier": "prettier --write '**/*.js'",
     "lint": "eslint '**/*.js'",
-    "pre-pull-request": "yarn prettier && yarn lint"
+    "pre-pull-request": "yarn prettier && yarn lint && yarn test"
   },
   "keywords": [
     "express",
